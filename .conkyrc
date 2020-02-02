@@ -1,0 +1,128 @@
+-- vim: ts=4 sw=4 noet ai cindent syntax=lua
+--[[
+Conky, a system monitor, based on torsmo
+
+Any original torsmo code is licensed under the BSD license
+
+All code written since the fork of torsmo is licensed under the GPL
+
+Please see COPYING for details
+
+Copyright (c) 2004, Hannu Saransaari and Lauri Hakkarainen
+Copyright (c) 2005-2012 Brenden Matthews, Philip Kovacs, et. al. (see AUTHORS)
+All rights reserved.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+]]
+
+conky.config = {
+    alignment = 'top_right',
+    background = false,
+    border_width = 1,
+    cpu_avg_samples = 2,
+	  default_color = 'white',
+    default_outline_color = 'white',
+    default_shade_color = 'white',
+    draw_borders = false,
+    draw_graph_borders = true,
+    draw_outline = false,
+    draw_shades = false,
+    use_xft = true,
+    font = 'DejaVu Sans Mono:size=12',
+    gap_x = 50,
+    gap_y = 50,
+    minimum_height = 5,
+	  minimum_width = 5,
+    net_avg_samples = 2,
+    no_buffers = true,
+    out_to_console = false,
+    out_to_stderr = false,
+    extra_newline = false,
+    own_window = true,
+    own_window_class = 'Conky',
+    own_window_type = 'desktop',
+    own_window_transparent = true,
+    own_window_argb_visual = true,
+    stippled_borders = 0,
+    update_interval = 1.0,
+    uppercase = false,
+    use_spacer = 'none',
+    show_graph_scale = false,
+    show_graph_range = false
+}
+
+conky.text = [[
+${font Arial:bold:size=12}${color #f58625}SYSTEM ${color #f58625}${hr 2}
+${color grey}Machine name:$color  $alignr$nodename
+${color grey}Kernel:$color  $alignr$sysname $kernel
+${color grey}Machine:$color $alignr$machine
+${color grey}Date:$color $alignr${time %A, %B %e}
+${color grey}Time:$color $alignr${time %H:%M:%S}
+${color grey}Uptime:$color  $alignr$uptime
+
+
+${font Arial:bold:size=12}${color #f58625}MEMORY ${color #f58625}${hr 2}
+${color grey}RAM Usage:$color $mem/$memmax - $memperc% ${membar 15}
+${color grey}Swap Usage:$color $swap/$swapmax - $swapperc% ${swapbar 15}
+
+
+${font Arial:bold:size=12}${color #f58625}PROCESSORS ${color #f58625}${hr 2}
+${color grey}Core 1:
+  ${color grey}Temperature:${goto 120}${color white}${exec sensors | grep 'Core 0' | cut -c17-23}
+  ${color grey}Thread 1:${goto 120}${color white}${freq_g 1} GHz  / $color ${cpu cpu0}%${goto 250}${cpubar cpu0 15}
+  ${color grey}Thread 2:${goto 120}${color white}${freq_g 2} GHz  / $color ${cpu cpu1}%${goto 250}${cpubar cpu1 15}
+${color grey}Core 2:
+  ${color grey}Temperature:${goto 120}${color white}${exec sensors | grep 'Core 1' | cut -c17-23}
+  ${color grey}Thread 1:${goto 120}${color white}${freq_g 3} GHz  / $color ${cpu cpu2}%${goto 250}${cpubar cpu2 15}
+  ${color grey}Thread 2:${goto 120}${color white}${freq_g 4} GHz  / $color ${cpu cpu3}%${goto 250}${cpubar cpu3 15}
+${color grey}Core 3:
+  ${color grey}Temperature:${goto 120}${color white}${exec sensors | grep 'Core 2' | cut -c17-23}
+  ${color grey}Thread 1:${goto 120}${color white}${freq_g 5} GHz  / $color ${cpu cpu4}%${goto 250}${cpubar cpu4 15}
+  ${color grey}Thread 2:${goto 120}${color white}${freq_g 6} GHz  / $color ${cpu cpu5}%${goto 250}${cpubar cpu5 15}
+${color grey}Core 4:
+  ${color grey}Temperature:${goto 120}${color white}${exec sensors | grep 'Core 3' | cut -c17-23}
+  ${color grey}Thread 1:${goto 120}${color white}${freq_g 7} GHz  / $color ${cpu cpu6}%${goto 250}${cpubar cpu6 15}
+  ${color grey}Thread 2:${goto 120}${color white}${freq_g 8} GHz  / $color ${cpu cpu7}%${goto 250}${cpubar cpu7 15}
+${color grey}Core 5:
+  ${color grey}Temperature:${goto 120}${color white}${exec sensors | grep 'Core 4' | cut -c17-23}
+  ${color grey}Thread 1:${goto 120}${color white}${freq_g 9} GHz  / $color ${cpu cpu8}%${goto 250}${cpubar cpu8 15}
+  ${color grey}Thread 2:${goto 120}${color white}${freq_g 10} GHz  / $color ${cpu cpu9}%${goto 250}${cpubar cpu9 15}
+${color grey}Core 6:
+  ${color grey}Temperature:${goto 120}${color white}${exec sensors | grep 'Core 5' | cut -c17-23}
+  ${color grey}Thread 1:${goto 120}${color white}${freq_g 11} GHz  / $color ${cpu cpu10}%${goto 250}${cpubar cpu10 15}
+  ${color grey}Thread 2:${goto 120}${color white}${freq_g 12} GHz  / $color ${cpu cpu11}%${goto 250}${cpubar cpu11 15}
+
+${color grey}Processes:$color $processes  ${color grey}Running:$color $running_processes
+
+${color grey}Name${goto 300}PID${goto 400}CPU%${goto 500}MEM%
+${color white}${top name 1}${goto 300}${top pid 1}${goto 400}${top cpu 1}${goto 500}${top mem 1}
+${color white}${top name 2}${goto 300}${top pid 2}${goto 400}${top cpu 2}${goto 500}${top mem 2}
+${color white}${top name 3}${goto 300}${top pid 3}${goto 400}${top cpu 3}${goto 500}${top mem 3}
+${color white}${top name 4}${goto 300}${top pid 4}${goto 400}${top cpu 4}${goto 500}${top mem 4}
+${color white}${top name 5}${goto 300}${top pid 5}${goto 400}${top cpu 5}${goto 500}${top mem 5}
+
+${font Arial:bold:size=12}${color #f58625}STORAGE ${color #f58625}${hr 2}
+${color grey}File systems:
+Mount point         Format          Used
+ /                              ${fs_type}               $color${fs_used /}/${fs_size /}  ${fs_bar 15 /}
+
+${color grey}Read ${color grey}${goto 300}Write
+${color grey}${diskiograph_read 50,250 000000 a10303}${goto 300}${color grey}${diskiograph_write 50,250 000000 03912b}
+
+
+${font Arial:bold:size=12}${color #f58625}NETWORK ${color #f58625}${hr 2}
+${color grey}Up:$color ${goto 100}${upspeed wlp4s0} ${color grey}${goto 300}Down:${goto 420}${color white}${downspeed wlp4s0}
+${color grey}Uploaded: ${color white} ${goto 100}${totalup wlp4s0} ${color grey}${goto 300}Downloaded:${goto 420}${color white}${totaldown wlp4s0}
+${color grey}${upspeedgraph wlp4s0 50,250 000000 a10303}${goto 300}${color grey}${downspeedgraph wlp4s0 50,250 000000 03912b}
+
+]]
