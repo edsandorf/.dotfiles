@@ -125,4 +125,5 @@ ${color grey}Up:$color ${goto 100}${upspeed wlp4s0} ${color grey}${goto 300}Down
 ${color grey}Uploaded: ${color white} ${goto 100}${totalup wlp4s0} ${color grey}${goto 300}Downloaded:${goto 420}${color white}${totaldown wlp4s0}
 ${color grey}${upspeedgraph wlp4s0 50,250 000000 a10303}${goto 300}${color grey}${downspeedgraph wlp4s0 50,250 000000 03912b}
 
+
 ]]
