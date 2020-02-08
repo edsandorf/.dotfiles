@@ -15,3 +15,11 @@ Need to have Conky installed `sudo apt install conky`. To setup Conky to run at 
 ```
 ln -s ~/.dotfiles/.conkyrc ~/.conkyrc
 ```
+
+## .gitconfig
+Create a symlink to ~
+
+```
+ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+```
+
