@@ -23,3 +23,9 @@ Create a symlink to ~
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ```
 
+## texstudio.ini
+Create a symlink to ~/.config/texstudio
+
+```
+ln -s ~/.dotfiles/texstudio.ini ~/.config/texstudio/
+```
