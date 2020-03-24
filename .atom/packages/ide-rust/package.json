@@ -1,0 +1,380 @@
+{
+  "_from": "https://www.atom.io/api/packages/ide-rust/versions/0.21.2/tarball",
+  "_id": "ide-rust@0.21.2",
+  "_inBundle": false,
+  "_integrity": "sha512-sks6zmJ6uyIo5tBRTtvfyHWzrBwNRFd8iqksIEpVl+8g7+m+Pfp4/c0gZNF8NFeGJ0IvEwxkwnMSlHiUYVSphQ==",
+  "_location": "/ide-rust",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/ide-rust/versions/0.21.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/ide-rust/versions/0.21.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/ide-rust/versions/0.21.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/ide-rust/versions/0.21.2/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/ide-rust/versions/0.21.2/tarball",
+  "_shasum": "632f9a751d4436898b70b37e48cc34ce7509919f",
+  "_spec": "https://www.atom.io/api/packages/ide-rust/versions/0.21.2/tarball",
+  "_where": "/tmp/apm-install-dir-2020224-46505-1djq6ey.wf5g",
+  "bugs": {
+    "url": "https://github.com/rust-lang/atom-ide-rust/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "linter-indie": {
+      "versions": {
+        "2.0.0": "consumeLinterV2"
+      }
+    },
+    "datatip": {
+      "versions": {
+        "0.1.0": "consumeDatatip"
+      }
+    },
+    "atom-ide-busy-signal": {
+      "versions": {
+        "0.1.0": "consumeBusySignal"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-languageclient": "github:alexheretic/atom-languageclient#build",
+    "atom-package-deps": "^5.1.0",
+    "toml": "^3.0.0",
+    "underscore-plus": "^1.7.0"
+  },
+  "deprecated": false,
+  "description": "Rust language support for Atom-IDE",
+  "devDependencies": {
+    "eslint": "^6.6.0"
+  },
+  "engines": {
+    "atom": ">=1.33.0"
+  },
+  "enhancedScopes": [
+    "source.rust"
+  ],
+  "homepage": "https://github.com/rust-lang/atom-ide-rust#readme",
+  "keywords": [
+    "rust",
+    "rls",
+    "ide"
+  ],
+  "license": "MIT",
+  "main": "./lib/index",
+  "name": "ide-rust",
+  "package-deps": [
+    "atom-ide-ui"
+  ],
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provideAutocomplete"
+      }
+    },
+    "code-actions": {
+      "versions": {
+        "0.1.0": "provideCodeActions"
+      }
+    },
+    "code-format.range": {
+      "versions": {
+        "0.1.0": "provideCodeFormat"
+      }
+    },
+    "code-highlight": {
+      "versions": {
+        "0.1.0": "provideCodeHighlight"
+      }
+    },
+    "definitions": {
+      "versions": {
+        "0.1.0": "provideDefinitions"
+      }
+    },
+    "find-references": {
+      "versions": {
+        "0.1.0": "provideFindReferences"
+      }
+    },
+    "outline-view": {
+      "versions": {
+        "0.1.0": "provideOutlines"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rust-lang/atom-ide-rust.git"
+  },
+  "scripts": {
+    "test": "eslint lib --max-warnings 0"
+  },
+  "version": "0.21.2",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "atom-languageclient",
+        "version": "0.9.9",
+        "path": "node_modules/atom-languageclient/build/lib/main.js"
+      },
+      {
+        "name": "atom-package-deps",
+        "version": "5.1.0",
+        "path": "node_modules/atom-package-deps/lib/index.js"
+      },
+      {
+        "name": "fuzzaldrin-plus",
+        "version": "0.6.0",
+        "path": "node_modules/fuzzaldrin-plus/lib/fuzzaldrin.js"
+      },
+      {
+        "name": "is-utf8",
+        "version": "0.2.1",
+        "path": "node_modules/is-utf8/is-utf8.js"
+      },
+      {
+        "name": "sb-fs",
+        "version": "4.0.0",
+        "path": "node_modules/sb-fs/lib/index.js"
+      },
+      {
+        "name": "semver",
+        "version": "6.3.0",
+        "path": "node_modules/semver/semver.js"
+      },
+      {
+        "name": "strip-bom-buf",
+        "version": "1.0.0",
+        "path": "node_modules/strip-bom-buf/index.js"
+      },
+      {
+        "name": "toml",
+        "version": "3.0.0",
+        "path": "node_modules/toml/index.js"
+      },
+      {
+        "name": "underscore",
+        "version": "1.9.2",
+        "path": "node_modules/underscore/underscore.js"
+      },
+      {
+        "name": "underscore-plus",
+        "version": "1.7.0",
+        "path": "node_modules/underscore-plus/lib/underscore-plus.js"
+      },
+      {
+        "name": "vscode-jsonrpc",
+        "version": "4.0.0",
+        "path": "node_modules/vscode-jsonrpc/lib/main.js"
+      },
+      {
+        "name": "vscode-languageserver-protocol",
+        "version": "3.12.0",
+        "path": "node_modules/vscode-languageserver-protocol/lib/main.js"
+      },
+      {
+        "name": "vscode-jsonrpc",
+        "version": "3.6.2",
+        "path": "node_modules/vscode-languageserver-protocol/node_modules/vscode-jsonrpc/lib/main.js"
+      },
+      {
+        "name": "vscode-languageserver-types",
+        "version": "3.12.0",
+        "path": "node_modules/vscode-languageserver-types/lib/umd/main.js"
+      }
+    ],
+    "extensions": {
+      ".js": [
+        ".eslintrc.js",
+        "lib/competition.js",
+        "lib/dist-fetch.js",
+        "lib/index.js",
+        "lib/rls-project.js",
+        "node_modules/atom-languageclient/build/lib/adapters/apply-edit-adapter.js",
+        "node_modules/atom-languageclient/build/lib/adapters/autocomplete-adapter.js",
+        "node_modules/atom-languageclient/build/lib/adapters/code-action-adapter.js",
+        "node_modules/atom-languageclient/build/lib/adapters/code-format-adapter.js",
+        "node_modules/atom-languageclient/build/lib/adapters/code-highlight-adapter.js",
+        "node_modules/atom-languageclient/build/lib/adapters/datatip-adapter.js",
+        "node_modules/atom-languageclient/build/lib/adapters/definition-adapter.js",
+        "node_modules/atom-languageclient/build/lib/adapters/document-sync-adapter.js",
+        "node_modules/atom-languageclient/build/lib/adapters/find-references-adapter.js",
+        "node_modules/atom-languageclient/build/lib/adapters/linter-push-v2-adapter.js",
+        "node_modules/atom-languageclient/build/lib/adapters/logging-console-adapter.js",
+        "node_modules/atom-languageclient/build/lib/adapters/notifications-adapter.js",
+        "node_modules/atom-languageclient/build/lib/adapters/outline-view-adapter.js",
+        "node_modules/atom-languageclient/build/lib/adapters/signature-help-adapter.js",
+        "node_modules/atom-languageclient/build/lib/auto-languageclient.js",
+        "node_modules/atom-languageclient/build/lib/convert.js",
+        "node_modules/atom-languageclient/build/lib/download-file.js",
+        "node_modules/atom-languageclient/build/lib/languageclient.js",
+        "node_modules/atom-languageclient/build/lib/logger.js",
+        "node_modules/atom-languageclient/build/lib/main.js",
+        "node_modules/atom-languageclient/build/lib/server-manager.js",
+        "node_modules/atom-languageclient/build/lib/utils.js",
+        "node_modules/atom-package-deps/lib/helpers.js",
+        "node_modules/atom-package-deps/lib/index.js",
+        "node_modules/atom-package-deps/lib/types.js",
+        "node_modules/atom-package-deps/lib/view.js",
+        "node_modules/fuzzaldrin-plus/dist-browser/fuzzaldrin-plus.js",
+        "node_modules/fuzzaldrin-plus/dist-browser/fuzzaldrin-plus.min.js",
+        "node_modules/fuzzaldrin-plus/lib/filter.js",
+        "node_modules/fuzzaldrin-plus/lib/fuzzaldrin.js",
+        "node_modules/fuzzaldrin-plus/lib/matcher.js",
+        "node_modules/fuzzaldrin-plus/lib/pathScorer.js",
+        "node_modules/fuzzaldrin-plus/lib/query.js",
+        "node_modules/fuzzaldrin-plus/lib/scorer.js",
+        "node_modules/is-utf8/is-utf8.js",
+        "node_modules/sb-fs/lib/index.js",
+        "node_modules/semver/bin/semver.js",
+        "node_modules/semver/semver.js",
+        "node_modules/strip-bom-buf/index.js",
+        "node_modules/toml/benchmark.js",
+        "node_modules/toml/index.js",
+        "node_modules/toml/lib/compiler.js",
+        "node_modules/toml/lib/parser.js",
+        "node_modules/underscore/underscore-min.js",
+        "node_modules/underscore/underscore.js",
+        "node_modules/underscore-plus/lib/underscore-plus.js",
+        "node_modules/vscode-jsonrpc/lib/cancellation.js",
+        "node_modules/vscode-jsonrpc/lib/events.js",
+        "node_modules/vscode-jsonrpc/lib/is.js",
+        "node_modules/vscode-jsonrpc/lib/linkedMap.js",
+        "node_modules/vscode-jsonrpc/lib/main.js",
+        "node_modules/vscode-jsonrpc/lib/messageReader.js",
+        "node_modules/vscode-jsonrpc/lib/messageWriter.js",
+        "node_modules/vscode-jsonrpc/lib/messages.js",
+        "node_modules/vscode-jsonrpc/lib/pipeSupport.js",
+        "node_modules/vscode-jsonrpc/lib/socketSupport.js",
+        "node_modules/vscode-jsonrpc/lib/thenable.js",
+        "node_modules/vscode-languageserver-protocol/lib/main.js",
+        "node_modules/vscode-languageserver-protocol/lib/protocol.colorProvider.js",
+        "node_modules/vscode-languageserver-protocol/lib/protocol.configuration.js",
+        "node_modules/vscode-languageserver-protocol/lib/protocol.foldingRange.js",
+        "node_modules/vscode-languageserver-protocol/lib/protocol.implementation.js",
+        "node_modules/vscode-languageserver-protocol/lib/protocol.js",
+        "node_modules/vscode-languageserver-protocol/lib/protocol.typeDefinition.js",
+        "node_modules/vscode-languageserver-protocol/lib/protocol.workspaceFolders.js",
+        "node_modules/vscode-languageserver-protocol/lib/utils/is.js",
+        "node_modules/vscode-languageserver-protocol/node_modules/vscode-jsonrpc/lib/cancellation.js",
+        "node_modules/vscode-languageserver-protocol/node_modules/vscode-jsonrpc/lib/events.js",
+        "node_modules/vscode-languageserver-protocol/node_modules/vscode-jsonrpc/lib/is.js",
+        "node_modules/vscode-languageserver-protocol/node_modules/vscode-jsonrpc/lib/linkedMap.js",
+        "node_modules/vscode-languageserver-protocol/node_modules/vscode-jsonrpc/lib/main.js",
+        "node_modules/vscode-languageserver-protocol/node_modules/vscode-jsonrpc/lib/messageReader.js",
+        "node_modules/vscode-languageserver-protocol/node_modules/vscode-jsonrpc/lib/messageWriter.js",
+        "node_modules/vscode-languageserver-protocol/node_modules/vscode-jsonrpc/lib/messages.js",
+        "node_modules/vscode-languageserver-protocol/node_modules/vscode-jsonrpc/lib/pipeSupport.js",
+        "node_modules/vscode-languageserver-protocol/node_modules/vscode-jsonrpc/lib/socketSupport.js",
+        "node_modules/vscode-languageserver-protocol/node_modules/vscode-jsonrpc/lib/thenable.js",
+        "node_modules/vscode-languageserver-types/lib/esm/main.js",
+        "node_modules/vscode-languageserver-types/lib/umd/main.js"
+      ],
+      ".json": [
+        "node_modules/atom-languageclient/package.json",
+        "node_modules/atom-languageclient/tsconfig.json",
+        "node_modules/atom-languageclient/tslint.json",
+        "node_modules/atom-package-deps/.eslintrc.json",
+        "node_modules/atom-package-deps/package.json",
+        "node_modules/fuzzaldrin-plus/bower.json",
+        "node_modules/fuzzaldrin-plus/demo/movies.json",
+        "node_modules/fuzzaldrin-plus/package.json",
+        "node_modules/is-utf8/package.json",
+        "node_modules/sb-fs/package.json",
+        "node_modules/semver/package.json",
+        "node_modules/strip-bom-buf/package.json",
+        "node_modules/toml/package.json",
+        "node_modules/underscore/package.json",
+        "node_modules/underscore-plus/package.json",
+        "node_modules/vscode-jsonrpc/package.json",
+        "node_modules/vscode-languageserver-protocol/node_modules/vscode-jsonrpc/package.json",
+        "node_modules/vscode-languageserver-protocol/package.json",
+        "node_modules/vscode-languageserver-types/package.json",
+        "node_modules/vscode-languageserver-types/tsconfig.esm.json",
+        "package-lock.json",
+        "package.json"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "",
+          "lib"
+        ],
+        "dependencies": {
+          "atom-package-deps": "^5.1.0",
+          "toml": "^3.0.0",
+          "underscore-plus": "^1.7.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/atom-languageclient/build/lib/adapters",
+          "node_modules/atom-languageclient/build/lib",
+          "node_modules/atom-languageclient/build/test/adapters",
+          "node_modules/atom-languageclient/build/test",
+          "node_modules/atom-languageclient"
+        ],
+        "dependencies": {
+          "fuzzaldrin-plus": "^0.6.0",
+          "vscode-jsonrpc": "4.0.0",
+          "vscode-languageserver-protocol": "3.12.0",
+          "vscode-languageserver-types": "3.12.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/atom-package-deps",
+          "node_modules/atom-package-deps/lib"
+        ],
+        "dependencies": {
+          "sb-fs": "^4.0.0",
+          "semver": "^6.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/sb-fs/lib",
+          "node_modules/sb-fs"
+        ],
+        "dependencies": {
+          "strip-bom-buf": "^1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/strip-bom-buf"
+        ],
+        "dependencies": {
+          "is-utf8": "^0.2.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/underscore-plus/lib",
+          "node_modules/underscore-plus"
+        ],
+        "dependencies": {
+          "underscore": "^1.9.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/vscode-languageserver-protocol/lib",
+          "node_modules/vscode-languageserver-protocol/lib/utils",
+          "node_modules/vscode-languageserver-protocol"
+        ],
+        "dependencies": {
+          "vscode-jsonrpc": "^3.6.2",
+          "vscode-languageserver-types": "^3.12.0"
+        }
+      }
+    ]
+  }
+}

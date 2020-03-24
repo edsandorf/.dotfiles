@@ -1,0 +1,10 @@
+"*":
+  core:
+    disabledPackages: [
+      "spell-check"
+    ]
+    telemetryConsent: "no"
+  "exception-reporting":
+    userId: "fa65dda5-1b94-4d54-9977-513fa2d5c811"
+  welcome:
+    showOnStartup: false
