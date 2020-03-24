@@ -4,7 +4,16 @@
       "spell-check"
     ]
     telemetryConsent: "no"
+    themes: [
+      "atom-material-ui"
+      "atom-material-syntax"
+    ]
+  editor:
+    scrollPastEnd: true
+    showIndentGuide: true
   "exception-reporting":
     userId: "fa65dda5-1b94-4d54-9977-513fa2d5c811"
+  pigments:
+    markerType: "native-square-dot"
   welcome:
     showOnStartup: false
