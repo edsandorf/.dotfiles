@@ -9,6 +9,7 @@
     closeEmptyWindows: false
     disabledPackages: [
       "metrics"
+      "exception-reporting"
     ]
     telemetryConsent: "no"
     themes: [
@@ -18,8 +19,6 @@
   editor:
     scrollPastEnd: true
     showIndentGuide: true
-  "exception-reporting":
-    userId: "eac15d4a-2464-4ad8-ba99-80e5b4a28681"
   pigments:
     markerType: "native-square-dot"
   "spell-check":
