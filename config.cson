@@ -1,7 +1,14 @@
 "*":
+  "autocomplete-plus":
+    fileBlacklist: [
+      ".*"
+      "*.md"
+    ]
   core:
+    closeDeletedFileTabs: true
+    closeEmptyWindows: false
     disabledPackages: [
-      "spell-check"
+      "metrics"
     ]
     telemetryConsent: "no"
     themes: [
@@ -12,8 +19,12 @@
     scrollPastEnd: true
     showIndentGuide: true
   "exception-reporting":
-    userId: "fa65dda5-1b94-4d54-9977-513fa2d5c811"
+    userId: "05e3fa8a-e241-4781-9c1e-8aa8900c824d"
   pigments:
     markerType: "native-square-dot"
+  "spell-check":
+    locales: [
+      "en-US"
+    ]
   welcome:
     showOnStartup: false
