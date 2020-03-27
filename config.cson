@@ -1,4 +1,6 @@
 "*":
+  Hydrogen:
+    globalMode: true
   "autocomplete-plus":
     fileBlacklist: [
       ".*"
