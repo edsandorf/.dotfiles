@@ -1,5 +1,5 @@
 # Aliases
-alias r = "radian"
+alias r="radian"
 
 # SSH AGENT
 setenv SSH_ENV $HOME/.ssh/environment
