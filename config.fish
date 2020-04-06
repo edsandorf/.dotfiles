@@ -1,5 +1,7 @@
 # Aliases
 alias r="radian"
+alias system_errors="journalctl -p 3 -xb"
+alias system_info="inxi -Fxxxza --no-host"
 
 # SSH AGENT
 setenv SSH_ENV $HOME/.ssh/environment
