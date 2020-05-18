@@ -2,6 +2,7 @@
 alias r="radian"
 alias system_errors="journalctl -p 3 -xb"
 alias system_info="inxi -Fxxxza --no-host"
+alias connect_aws_rstudio_server="ssh -i ~/documents/security/aws-rstudio-server.pem ubuntu@ec2-3-11-158-104.eu-west-2.compute.amazonaws.com"
 
 # SSH AGENT
 setenv SSH_ENV $HOME/.ssh/environment
